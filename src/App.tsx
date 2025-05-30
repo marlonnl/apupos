@@ -5,10 +5,12 @@ import Rotas from './routes'
 
 function App() {
   return (
-    <BrowserRouter>
-      <GlobalStyle />
-      <Rotas />
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Rotas />
+      </BrowserRouter>
+    </>
   )
 }
 
