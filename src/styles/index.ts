@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { color } from './colors'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -7,5 +8,15 @@ export const GlobalStyle = createGlobalStyle`
       box-sizing: border-box;
       font-family: Roboto, sans-serif;
       list-style-type: none;
+  }
+
+  body {
+    background-color: ${color.bgPrimary};
+  }
+
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
   }
 `
