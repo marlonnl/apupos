@@ -12,7 +12,7 @@ export const MainContainer = styled.div`
 
 export const Content = styled.div`
   padding: 16px 24px;
-  width: 600px;
+  width: 100%;
 
   h2 {
     color: ${color.text};
@@ -23,7 +23,11 @@ export const Content = styled.div`
 
 export const Sidebar = styled.div`
   background-color: ${color.bgSidebar};
-  width: 200px;
+  border-left: 1px solid ${color.textReaminingChr};
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 30%;
+  padding: 8px;
 `
 
 export const Compose = styled.div`
