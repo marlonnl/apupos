@@ -8,5 +8,7 @@ export const color = {
   text: '#37419A',
   textSecondary: '#0084B4',
   textComment: '#666666',
-  textReaminingChr: '#CCCCCC'
+  textReaminingChr: '#CCCCCC',
+
+  separtor: '#eeeeee'
 }

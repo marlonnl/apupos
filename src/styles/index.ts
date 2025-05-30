@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${color.bgPrimary};
+    padding: 16px 0;
   }
 
   .container {
