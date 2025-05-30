@@ -27,11 +27,29 @@ export const Sidebar = styled.div`
 `
 
 export const Compose = styled.div`
-  display: flex;
-  justify-content: space-between;
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
 
   span {
     color: ${color.textReaminingChr};
     font-weight: bold;
+  }
+
+  textarea {
+    margin: 8px 0;
+    width: 100%;
+    resize: none;
+    border: 1px solid ${color.textReaminingChr};
+    outline: none;
+    overflow: auto;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 2px 8px;
+    margin-left: auto;
+    margin-right: 0;
   }
 `
