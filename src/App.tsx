@@ -1,10 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom'
+
+import { GlobalStyle } from './styles'
+import Rotas from './routes'
 
 function App() {
   return (
-    <h1>apupos</h1>
-  );
+    <BrowserRouter>
+      <GlobalStyle />
+      <Rotas />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
