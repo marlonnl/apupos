@@ -8,6 +8,16 @@ export const MainContainer = styled.div`
 
   display: flex;
   justify-content: space-between;
+
+  &::before {
+    content: '▲';
+    color: ${color.bgContent};
+    font-size: 22px;
+    margin-top: -20px;
+    margin-left: 40px;
+    left: auto;
+    position: absolute;
+  }
 `
 
 export const Content = styled.div`
