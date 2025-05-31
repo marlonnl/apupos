@@ -1,7 +1,18 @@
 import Callout from '../Callout'
-import { MiniAvatar, SideContainer, StatsBar, UserBar } from './styles'
+import {
+  MiniAvatar,
+  SideContainer,
+  SideMenu,
+  SideMenuItem,
+  StatsBar,
+  UserBar
+} from './styles'
 
-const Sidebar = () => {
+export type Props = {
+  active?: boolean
+}
+
+const Sidebar = ({ active = false }: Props) => {
   return (
     <>
       <SideContainer>
@@ -28,6 +39,24 @@ const Sidebar = () => {
         </StatsBar>
 
         <Callout />
+
+        <SideMenu>
+          <ul>
+            <SideMenuItem active={true}>
+              <a href="">Home</a>
+            </SideMenuItem>
+            <SideMenuItem>
+              <a href="">@UserName</a>
+            </SideMenuItem>
+            <SideMenuItem>
+              <a href="">Direct Messages</a>
+              <p>177</p>
+            </SideMenuItem>
+            <SideMenuItem>
+              <a href="">Favorites</a>
+            </SideMenuItem>
+          </ul>
+        </SideMenu>
       </SideContainer>
     </>
   )

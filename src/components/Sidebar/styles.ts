@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { color } from '../../styles/colors'
 
+import { Props } from '.'
+
 export const SideContainer = styled.div`
   background-color: ${color.bgSidebar};
   border-left: 1px solid ${color.textReaminingChr};
@@ -54,5 +56,40 @@ export const StatsBar = styled.div`
   span {
     font-size: 10px;
     color: ${color.textSecondary};
+  }
+`
+
+export const SideMenu = styled.div`
+  color: ${color.textSecondary};
+  /* padding: 0 10px; */
+  font-size: 12px;
+`
+
+export const SideMenuItem = styled.li<Props>`
+  display: flex;
+  justify-content: space-between;
+  background-color: ${(props) =>
+    props.active === true ? color.bgSidebarSecondary : ''};
+
+  a,
+  p {
+    padding: 6px 0;
+    margin: 0 10px;
+
+    font-weight: ${(props) => (props.active === true ? 'bold' : 'normal')};
+    color: ${(props) => (props.active === true ? color.text : '')};
+  }
+
+  a:hover {
+    text-decoration: ${(props) =>
+      props.active === true ? 'none' : 'underline'};
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: ${color.bgSidebarSecondary};
   }
 `
