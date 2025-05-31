@@ -7,7 +7,7 @@ export const SideContainer = styled.div`
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   width: 30%;
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 14px;
   color: ${color.text};
 `
@@ -16,6 +16,7 @@ export const UserBar = styled.div`
   display: flex;
   align-items: start;
   margin-bottom: 12px;
+  padding: 10px 10px 0 10px;
 
   div {
     h3 {
@@ -39,6 +40,7 @@ export const MiniAvatar = styled.div`
 export const StatsBar = styled.div`
   display: flex;
   gap: 8px;
+  padding: 0 10px;
 
   div {
     display: flex;
