@@ -20,4 +20,13 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
   }
+
+  a {
+    text-decoration: none;
+    color: ${color.textSecondary};
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 `
