@@ -1,3 +1,4 @@
+import Callout from '../Callout'
 import { MiniAvatar, SideContainer, StatsBar, UserBar } from './styles'
 
 const Sidebar = () => {
@@ -25,6 +26,8 @@ const Sidebar = () => {
             <span>favoritos</span>
           </div>
         </StatsBar>
+
+        <Callout />
       </SideContainer>
     </>
   )
