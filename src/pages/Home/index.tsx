@@ -1,7 +1,8 @@
 import ApuposList from '../../components/ApuposList'
 import Compose from '../../components/Compose'
 import { Separator } from '../../components/Separator'
-import { Content, MainContainer, Sidebar } from './styles'
+import Sidebar from '../../components/Sidebar'
+import { Content, MainContainer } from './styles'
 
 const Home = () => {
   return (
@@ -13,9 +14,7 @@ const Home = () => {
           <Separator />
           <ApuposList />
         </Content>
-        <Sidebar>
-          <p>a</p>
-        </Sidebar>
+        <Sidebar />
       </MainContainer>
     </div>
   )

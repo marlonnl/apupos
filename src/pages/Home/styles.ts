@@ -20,12 +20,3 @@ export const Content = styled.div`
     font-weight: normal;
   }
 `
-
-export const Sidebar = styled.div`
-  background-color: ${color.bgSidebar};
-  border-left: 1px solid ${color.textReaminingChr};
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  width: 30%;
-  padding: 8px;
-`
